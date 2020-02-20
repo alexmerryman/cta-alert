@@ -61,13 +61,6 @@ def main():
     # print(message.sid)
 
     return cta_mapid, next_trains
-    # class Alert:
-    #     def __init__(self):
-    #         self.station_id = cta_mapid
-    #         self.next_eta = next_trains[0]
-    #         self.other_etas = next_trains[1:]
-    #
-    # return Alert
 
 
 class Alert:
