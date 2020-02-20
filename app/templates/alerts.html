@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Upcoming Train Alerts</h2>
+        <p>
+            <h4>Station ID:</h4>
+            {{ alert.station_id }}<br>
+            <h4>Next train coming in:</h4>
+            {{ alert.next_eta }} min(s)<br>
+            <h4>Other trains coming in:</h4>
+            {{ alert.other_etas }}
+        </p>
+{% endblock %}

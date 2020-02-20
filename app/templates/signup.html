@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Sign Up For Alerts</h2>
+    <h3>Enter your station ID and phone number:</h3>
+    <form action="" method="post" novalidate>
+      {{ form.hidden_tag() }}
+        <p>
+            {{ form.station_id.label }}<br>
+            {{ form.station_id(size=32) }}
+        </p>
+        <p>
+            {{ form.input_phone_num.label }}<br>
+            {{ form.input_phone_num(size=32) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}
